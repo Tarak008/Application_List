@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Form</title>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px;">
+
+  <div style="max-width: 600px; margin: auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h2 style="text-align: center;">Application Form</h2>
+
+    <form>
+
+      
+      <input type="hidden" name="form_id" value="12345">
+
+      <div style="margin-bottom: 15px;">
+        <label>Full Name (Text)</label><br>
+        <input type="text" name="fullname" style="width: 100%; padding: 8px;" required>
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Password</label><br>
+        <input type="password" name="password" style="width: 100%; padding: 8px;" required>
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Email</label><br>
+        <input type="email" name="email" style="width: 100%; padding: 8px;" required>
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Age (Number)</label><br>
+        <input type="number" name="age" min="10" max="100" style="width: 100%; padding: 8px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Date of Birth</label><br>
+        <input type="date" name="dob" style="width: 100%; padding: 8px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Skills (Checkbox)</label><br>
+        <input type="checkbox" name="skills" value="HTML"> HTML
+        <input type="checkbox" name="skills" value="CSS"> CSS
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Gender (Radio)</label><br>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Upload Resume (File)</label><br>
+        <input type="file" name="resume" style="width: 100%;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Upload Image</label><br>
+        <input type="file" id="imageUpload" accept="image/*" style="width: 100%;">
+        <img id="previewImage" src="#" alt="Preview" style="max-width: 100%; display: none; margin-top: 10px; border: 1px solid #ccc; padding: 5px; border-radius: 5px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Volume (Range)</label><br>
+        <input type="range" name="volume" min="0" max="100" style="width: 100%;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Favorite Color</label><br>
+        <input type="color" name="favColor" style="width: 100%;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Search</label><br>
+        <input type="search" name="search" style="width: 100%; padding: 8px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Portfolio URL</label><br>
+        <input type="url" name="website" style="width: 100%; padding: 8px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Preferred Week</label><br>
+        <input type="week" name="week" style="width: 100%; padding: 8px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Start Month</label><br>
+        <input type="month" name="month" style="width: 100%; padding: 8px;">
+      </div>
+
+      <div style="margin-bottom: 15px;">
+        <label>Available Time</label><br>
+        <input type="time" name="time" style="width: 100%; padding: 8px;">
+      </div>
+
+      <div style="display: flex; justify-content: space-between; gap: 10px; margin-top: 20px;">
+        <input type="submit" value="Submit" style="flex: 1; padding: 10px;">
+        <input type="reset" value="Reset" style="flex: 1; padding: 10px;">
+        <button type="button" onclick="alert('Button clicked!')" style="flex: 1; padding: 10px;">Click Me</button>
+      </div>
+
+    </form>
+  </div>
+</body>
+</html>
